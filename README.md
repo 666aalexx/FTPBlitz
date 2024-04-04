@@ -9,7 +9,5 @@
   
   python3 ftpblitz.py -t target
 
-  or
-
   python3 ftpblitz.py -t target -u wordlist -p wordlist
 ```
