@@ -26,7 +26,7 @@ else:
 target = args.target
 
 
-def attack():
+def main():
     with open(uwordlist, "r") as ufile:
         for user in ufile:
             user = user.strip()
@@ -46,10 +46,10 @@ def attack():
                         pass
                     else:
                         print(f"{redColour}Password not found{resetColour}")
-                        sys.exit(0)
+                        sys.exit(1)
 
 if __name__ == "__main__":
     try:
-        attack()
+        main()
     except KeyboardInterrupt:
         sys.exit(1)
